@@ -1,38 +1,128 @@
 .robot-container {
+display:grid;
+flex-direction: row;
+gap:40px;
 }
 
 .robot-face-shape {
+width: 300px;
+height: 300px;
+border: 12px dotted;
+border-color: antiquewhite;
+border-radius: 50%;
+background-color: rgb(9, 145, 145);
+margin: 120px auto;
 }
 
 .robot-eye-left {
+position: absolute;
+top:120px;
+left: 470px;
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 40px solid transparent;
+border-bottom: 30px solid rgb(82, 225, 137);
+margin: 80px 60px auto;
 }
 
 .robot-eye-right {
+position: absolute;
+top:190px;
+right: 550px;
+width: 0;
+height: 0;
+border-top: 30px solid transparent;
+border-left: 40px solid rgb(224, 32, 150);
+border-bottom: 20px solid transparent;
 }
 
 .robot-ear-left {
+position:absolute;
+top: 230px;
+left:435px;
+height: 100px;
+width: 50px;
+border: 1px solid;
+background-image: url(https://picsum.photos/50/100);
+background-size: 100%;
 }
 
 .robot-ear-right {
+position: absolute;
+bottom: 260px;
+left: 785px;
+display: block;
+width: 70px;
+height: 110px;
+background-color: rgb(228, 225, 70);
+border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+opacity: 50%;
 }
 
 .robot-nose {
+position: absolute;
+top: 280px;
+left: 595px;
+width: 80px;
+height: 30px;
+border: 1px solid;
+border-radius: 50%;
+background-image: radial-gradient(#C6FFDD, #FBD786, #f7797d);
 }
 
 .robot-teeth {
+display: flex;
+flex-direction: row;
+gap: 1px;
+position: absolute;
+left: 540px;
+bottom: 230px;
 }
 
 .robot-tooth {
+width: 15px;
+height: 15px;
+border: 1px solid;
+background-color: blanchedalmond;
 }
 
 .robot-hair-style {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .robot-hair-one {
-}
+    position: absolute;
+    border-bottom: 25px solid rgb(224, 95, 95);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 100px;
+    bottom: 485px;
+    left: 580px;
+    }
+
 
 .robot-hair-two {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border: 1px solid;
+    background-color:rgb(225, 170, 52);
+    top:80px;
+    bottom: 480px;
+    left:540px;
 }
 
 .robot-hair-three {
+       position: absolute;
+    width: 30px;
+    height: 50px;
+    border: 1px solid;
+    background-color:rgb(225, 170, 52);
+    top:80px;
+    bottom: 480px;
+    left:690px;
 }
