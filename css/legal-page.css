@@ -1,5 +1,6 @@
 .legal-header {
-  background-color: #e2e2e2;
+  position: fixed;
+   background-color: #e2e2e2;
   padding: 30px;
   margin-top: 60px;
   width: 100%;
@@ -12,6 +13,8 @@
 }
 
 main {
+  position: relative;
+  top: 150px;
 }
 
 section {
@@ -26,9 +29,11 @@ section {
 }
 
 .section-label {
-  width: 100%;
+  position: sticky;
+  top:200px;
+  width: auto;
   background-color: #2b2d3b;
-  height: max-content;
+  height: 40px;
   padding: 10px 16px;
 }
 
@@ -53,6 +58,8 @@ section {
 }
 
 footer {
+  position:fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   width: 100%;
